@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "poppins" , sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #f2f2f2;
+}
+
+.contact-form{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    background: #31aff35a;
+    margin: 30px 0;
+}
+
+.contact-form > * {
+    width: 50%;
+} 
+
+.contact-form .fist-container {
+    background: url("image_bg.jpg") center center/cover no-repeat ;
+    background-image: radial-gradient(rgba(10, 4, 4, 0.915),rgba(22, 18, 18, 0.833)), url("image_bg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form .fist-container .info-container div{
+    margin: 30px ;
+}
+
+.contact-form .fist-container .info-container div h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+
+.contact-form .fist-container .info-container div p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #00ad5f;
+}
+
+.contact-form .fist-container .info-container div:first-of-type p{
+    max-width: 320px;
+    color: #999;
+}
+
+.contact-form .second-container {
+    padding: 50px;
+}
+
+.contact-form .second-container form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-form .second-container h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .second-container form.form-group{
+    margin: 20px;
+}
+
+.contact-form .second-container form.form-group *{
+    min-height: 55px;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+}
+
+.contact-form .second-container form.form-group label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 10px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: -1px;
+}
+
+.contact-form .second-container form.form-group:first-of-type input{
+    width: 100%;
+    margin-right: -5px;
+}
+
+.contact-form .second-container form.form-group input{
+    width: 100%;
+    font-size: 18px;
+    margin-top: -1px;
+}
+
+.contact-form .second-container form.form-group input::placeholder,
+.contact-form .second-container form.form-group textarea::placeholder{
+    color: #999;
+}
+
+
+.contact-form .second-container form.form-group textarea{
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+    padding: 10px 20px;
+    margin-top: -1px;
+}
+
+.contact-form .second-container form button{
+    width: 250px;
+    height: 30px;
+    background: #00ad5f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 30;
+    position: relative;
+    left: calc(50% -100px);
+    cursor: pointer;
+}
+
+.contact-form .second-container form button:hover{
+    background: #333;
+}
+
+@media screen and (max-width:800px){
+    .contact-form{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contact-form{
+        flex-direction: column-reverse;
+    }
+    .contact-form > *{
+        width: 100%;
+    }
+    .contact-form .first-container{
+        padding: 40px 0;
+    }
+}
